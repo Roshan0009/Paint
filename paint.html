@@ -1,0 +1,67 @@
+<!--Roshan Lamichhane
+C0916262
+Assignment 9-10-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Draw</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="paint.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1 class="heading">Let's Draw</h1>
+      <canvas id="canvas" width="800" height="400"></canvas>
+      <div class="tools-div">
+        <button class="buttooon" onclick="changeColor('blue')">
+          <i class="fas fa-paint-brush" style="color: blue"></i>
+        </button>
+        <button class="buttooon" onclick="changeColor('black')">
+          <i class="fas fa-paint-brush" style="color: black"></i>
+        </button>
+        <button class="buttooon" onclick="changeColor('red')">
+          <i class="fas fa-paint-brush" style="color: red"></i>
+        </button>
+        <button class="buttooon" onclick="changeColor('yellow')">
+          <i class="fas fa-paint-brush" style="color: yellow"></i>
+        </button>
+        <button class="buttooon" onclick="changeColor('#ffffff')">
+          <i class="fas fa-eraser"></i>
+        </button>
+        <button class="buttooon" onclick="clearCanvas()">
+          <i class="far fa-file"></i>
+        </button>
+      </div>
+      <div class="form">
+        <div class="brush-size-container">
+          <label for="brushSize" class="brush-size-label">Brush Size:</label>
+          <!--This is the section for the Brus size-->
+          <input
+            type="range"
+            id="brushSize"
+            min="2"
+            max="15"
+            value="5"
+            oninput="changeBrushSize(this.value)"
+            class="slider"
+          />
+          <!-- here in the section above i adjusted the size of the brush-->
+          <span id="brushSizeValue">5</span>
+        </div>
+      </div>
+    </div>
+    <script src="paint.js"></script>
+    <!--Linking my javascrpit with html-->
+  </body>
+</html>
