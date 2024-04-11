@@ -1,0 +1,44 @@
+
+#canvas {
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-div {
+  padding-top: 20px;
+}
+
+.heading {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tools-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttooon {
+  margin: 0 5px;
+}
+
+.form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style adjustments for inline brush size display */
+.brush-size-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brush-size-container input {
+  margin: 0 10px;
+}
+
+.brush-size-label {
+  display: flex;
+  align-items: center;
+}
